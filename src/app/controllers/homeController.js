@@ -7,4 +7,7 @@ router.get('/', (req, res) => {
     res.send({ ok: true, user: req.userId});
 });
 
+router.get('/validate_token', (req, res) => {
+    res.send({ ok: true, user: req.userId});
+});
 module.exports = app => app.use('/home', router);
